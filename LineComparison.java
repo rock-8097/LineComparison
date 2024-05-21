@@ -32,8 +32,18 @@ public class LineComparison {
     }
     public static void main(String[] args){
         System.out.println("Welcome to Line Comparison Computation Program");
-        double length = setCordinates();
-        System.out.println("Length of the line segment: " + length);
-        
+        double lineLength1 = setCordinates();
+        System.out.println("Length of the line segment: " + lineLength1);
+        double lineLength2 = setCordinates();
+        System.out.println("Length of the line segment: " + lineLength2);
+        if (lineLength1 == lineLength2){
+            System.out.println("Length of  both lines are equal");
+        }
+        else if(lineLength1<lineLength2){
+            System.out.println("Length of  line 1 is less than line 2");
+        }
+        else{
+            System.out.println("Length of line 1 is greater than line 2");
+        }
     }
 }
